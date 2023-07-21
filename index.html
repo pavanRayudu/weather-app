@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="input_card" id="search">
+        <input id="input" type="text" placeholder="e.g Hyderabad" />
+        <button type="submit">
+          <img src="./images/search.png" alt="search_icon" />
+        </button>
+      </form>
+      <div class="weather_card">
+        <div class="background">
+          <div class="top">
+            <div class="location_name">
+                <img src="./images/location.png" alt="" />
+              <span id="location_name"></span>
+            </div>
+            <div class="date_time">
+              <span id="date"></span>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="temparature">
+              <h1 id="temparature_value"></h1>
+              <span id="climate_mood"></span>
+            </div>
+            <div class="climate_details">
+              <div class="humidity detail">
+                <span style="font-size: 14px;">Humidity</span>
+                <span id="humidity_value" class="value"></span>
+              </div>
+              <div class="wind detail">
+                <span style="font-size: 14px;">Wind</span>
+                <span id="wind_value" class="value"></span>
+              </div>
+            </div>
+          </div>
+          <div class="error">
+            <span>City Not Found !</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
