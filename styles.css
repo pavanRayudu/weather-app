@@ -2,14 +2,16 @@
 
 body{
     background-color: rgb(22, 22, 22);
-    height: 100vh;
     display: flex;
     color: white;
     justify-content: center;
     align-items: center;
+    scroll-behavior: none;
+    
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -154,6 +156,10 @@ body{
     font-weight: bold;
     color: red;
     font-size: 18px;
+}
+#author {
+    position: absolute;
+    bottom: 20px;
 }
 @media screen and (min-width:320px) and (max-width:450px) {
     .container{
