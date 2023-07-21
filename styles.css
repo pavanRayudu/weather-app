@@ -150,6 +150,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+.error span{
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+}
 @media screen and (min-width:320px) and (max-width:450px) {
     .container{
         position: absolute;
