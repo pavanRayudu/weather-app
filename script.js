@@ -26,7 +26,7 @@ async function getWeatherInfo(loc) {
     document.getElementById("humidity_value").innerHTML = humidity + "%";
     document.getElementById("wind_value").innerHTML =
       (windSpeed * 3.6).toFixed(1) + "km/hr";
-    date.innerHTML = new Date().toLocaleDateString();
+    date.innerHTML = new Date().toLocaleDateString("pl-PL");
 
     if (climateMood === "clouds" || climateMood === "Drizzle") {
       // document.querySelector('.middle').style.background = "url('./images/rain.png')"
